@@ -6,10 +6,34 @@ body {
     margin: 0px;
 }
 .main-header {
-    background-color: #e7a5de;
+    background-color: #f5e2f2;
      display: grid;
     grid-template-columns: auto 1fr auto;  
 }
 .navigation {
-    grid-column-start:3 ;
+    grid-column-start:3;
+    align-self: stretch;
+    display:flex;
+    flex-direction: row; 
+}
+/*select the <a> inside .navigation */
+.navigation a {
+padding: 12pt;
+text-decoration: none;
+color: rgb(209, 137, 179);
+}
+.navigation a:hover {
+background-color: rgb(241, 108, 230);
+color:rgb(253, 253, 253);
+}
+.banner {
+    background-image: url("Pink.jpg");
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.banner h2 {
+    font-size: 300%;
 }
